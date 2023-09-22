@@ -55,7 +55,7 @@ app.openapi(
   ({ req, json }) => {
     const input = req.valid('form');
     
-    if (typeof input === 'object' && input instanceof File) {
+    if (typeof input.file === 'object' && input.file instanceof File) {
       return json({ success: true });
     }
 
