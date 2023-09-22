@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.1.0",
+    "@hono/zod-openapi": "^0.2.0",
+    "@supabase/supabase-js": "^2.33.1",
+    "class-transformer": "^0.5.1",
+    "hono": "^3.5.4",
+    "reflect-metadata": "^0.1.13",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "bun-types": "latest",
+    "eslint": "^8.48.0",
+    "openapi-typescript-codegen": "^0.25.0",
+    "tsx": "^3.12.2"
+  }
+}
